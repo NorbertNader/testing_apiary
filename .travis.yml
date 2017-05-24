@@ -1,5 +1,6 @@
- language: php
- php:
-    7.1
+language: php
+php: 7.1
 before_install:
-  - npm install -g dredd
+  - npm install -g dredd@3.5.0
+before_script:
+  - dredd
