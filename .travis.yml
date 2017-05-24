@@ -3,6 +3,6 @@ php: 7.1
 before_install:
   - npm install -g dredd@3.5.0
 before_script:
-  - dredd
+  - 'php -S localhost:8000
 script:
-  - 'php -S localhost:8000'
+  - 'dredd'
