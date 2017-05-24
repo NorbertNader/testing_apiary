@@ -1,16 +1,14 @@
-reporter: apiary
-custom:
-  apiaryApiKey: <my_key>
-  apiaryApiName: <my_api_name>
 dry-run: null
 hookfiles: null
 language: php
 sandbox: false
-server: null
+server: 'php -S 127.0.0.1:8000'
 server-wait: 3
 init: false
+custom: {}
 names: false
 only: []
+reporter: []
 output: []
 header: []
 sorted: false
@@ -33,4 +31,4 @@ hooks-worker-handler-host: 127.0.0.1
 hooks-worker-handler-port: 61321
 config: ./dredd.yml
 blueprint: api-description.apib
-endpoint: 'http://localhost/dredd.php'
+endpoint: 'http://127.0.0.1:8000/dredd.php'
